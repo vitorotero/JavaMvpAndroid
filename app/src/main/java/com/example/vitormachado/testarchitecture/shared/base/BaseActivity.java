@@ -11,7 +11,7 @@ import io.reactivex.disposables.CompositeDisposable;
 
 public abstract class BaseActivity extends DaggerActivity implements BaseView {
 
-    private CompositeDisposable disposable;
+    private CompositeDisposable disposables;
 
     protected abstract int contentLayout();
 
@@ -23,8 +23,8 @@ public abstract class BaseActivity extends DaggerActivity implements BaseView {
         throw new IllegalArgumentException("Please override this method");
     }
 
-    public CompositeDisposable getDisposable() {
-        return disposable;
+    public void addDisposable(Disposable disposable) {
+        disposables.add(disposable);
     }
 
     @Override
@@ -33,8 +33,8 @@ public abstract class BaseActivity extends DaggerActivity implements BaseView {
         setContentView(contentLayout());
         ButterKnife.bind(this);
 
-        if (disposable == null || disposable.isDisposed()) {
-            disposable = new CompositeDisposable();
+        if (disposables == null || disposables.isDisposed()) {
+            disposables = new CompositeDisposable();
         }
 
         create();
@@ -43,7 +43,11 @@ public abstract class BaseActivity extends DaggerActivity implements BaseView {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        disposable.dispose();
+        if (disposables != null) {
+            disposables.clear();
+            disposables.dispose();
+        }
+
         destroy();
     }
 
