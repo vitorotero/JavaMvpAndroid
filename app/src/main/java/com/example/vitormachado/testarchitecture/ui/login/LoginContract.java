@@ -1,7 +1,7 @@
 package com.example.vitormachado.testarchitecture.ui.login;
 
-import com.example.vitormachado.testarchitecture.shared.basemvp.BasePresenter;
-import com.example.vitormachado.testarchitecture.shared.basemvp.BaseView;
+import com.example.vitormachado.testarchitecture.shared.base.BasePresenter;
+import com.example.vitormachado.testarchitecture.shared.base.BaseView;
 
 public interface LoginContract {
 

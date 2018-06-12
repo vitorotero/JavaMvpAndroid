@@ -1,4 +1,4 @@
-package com.example.vitormachado.testarchitecture.shared.basemvp;
+package com.example.vitormachado.testarchitecture.shared.base;
 
 public interface BasePresenter {
 
