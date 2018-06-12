@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import butterknife.ButterKnife;
 import dagger.android.DaggerActivity;
 import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
 
 public abstract class BaseActivity extends DaggerActivity implements BaseView {
 
@@ -21,10 +22,6 @@ public abstract class BaseActivity extends DaggerActivity implements BaseView {
 
     public static Intent getIntent(Context from) {
         throw new IllegalArgumentException("Please override this method");
-    }
-
-    public void addDisposable(Disposable disposable) {
-        disposables.add(disposable);
     }
 
     @Override
@@ -49,6 +46,11 @@ public abstract class BaseActivity extends DaggerActivity implements BaseView {
         }
 
         destroy();
+    }
+
+    @Override
+    public void addDisposable(Disposable disposable) {
+        disposables.add(disposable);
     }
 
 }

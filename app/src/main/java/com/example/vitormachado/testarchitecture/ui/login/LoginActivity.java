@@ -52,7 +52,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
     }
 
     private void initEvents() {
-        getDisposable().add(RxView.clicks(btnSignIn)
+        addDisposable(RxView.clicks(btnSignIn)
                 .debounce(100, TimeUnit.MILLISECONDS)
                 .subscribe(aVoid -> presenter.doSignIn(etEmail.getText().toString(),
                         etPassword.getText().toString())

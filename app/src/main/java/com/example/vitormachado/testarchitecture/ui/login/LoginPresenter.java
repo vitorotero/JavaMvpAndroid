@@ -38,7 +38,7 @@ public class LoginPresenter extends BasePresenterImp<LoginContract.View> impleme
             return;
         }
 
-        getDisposable().add(userManager.doSignIn(mail, password)
+        getView().addDisposable(userManager.doSignIn(mail, password)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(this::doSignInSuccess, this::doSignInError)
