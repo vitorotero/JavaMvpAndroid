@@ -8,7 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.vitormachado.testarchitecture.shared.basemvp.BaseView;
 
-public abstract class BaseActivity extends AppCompatActivity implements BaseView {
+import dagger.android.DaggerActivity;
+
+public abstract class BaseActivity extends DaggerActivity implements BaseView {
 
     protected abstract int contentLayout();
 

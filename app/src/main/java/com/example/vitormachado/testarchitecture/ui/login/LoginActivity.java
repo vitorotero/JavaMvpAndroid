@@ -6,9 +6,12 @@ import android.content.Intent;
 import com.example.vitormachado.testarchitecture.R;
 import com.example.vitormachado.testarchitecture.shared.base.BaseActivity;
 
+import javax.inject.Inject;
+
 public class LoginActivity extends BaseActivity implements LoginContract.View {
 
-    private LoginContract.Presenter presenter;
+    @Inject
+     LoginContract.Presenter presenter;
 
     public static Intent getIntent(Context from) {
         Intent intent = new Intent(from, LoginActivity.class);
@@ -23,6 +26,7 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
 
     @Override
     protected void create() {
+        presenter.teste();
 
     }
 
