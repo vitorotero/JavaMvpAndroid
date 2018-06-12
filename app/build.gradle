@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.example.vitormachado.testarchitecture"
-        minSdkVersion 22
+        minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -14,17 +14,22 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            resValue "string", "SERVER_API_URL", "http://www.7comm.com.br/"
+            resValue "string", "SERVER_API_URL", "http://www.bing.com.br/"
         }
         debug {
             resValue "string", "SERVER_API_URL", "http://www.google.com.br/"
         }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
 
     //Material Design
     implementation 'com.android.support.constraint:constraint-layout:1.1.1'
@@ -44,6 +49,11 @@ dependencies {
     //Retrofit2
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation "com.squareup.retrofit2:converter-gson:2.4.0"
+
+    //RxJava RxAndroid RxBindings
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.14'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
 
     //Test
     testImplementation 'junit:junit:4.12'

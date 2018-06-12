@@ -2,16 +2,27 @@ package com.example.vitormachado.testarchitecture.shared.base;
 
 import android.content.Context;
 
+import io.reactivex.disposables.CompositeDisposable;
+
 public abstract class BasePresenterImp<V extends BaseView> implements BasePresenter {
 
     private V view;
+    private CompositeDisposable disposable;
 
     public BasePresenterImp(V view) {
         this.view = view;
+
+        if (disposable == null || disposable.isDisposed()) {
+            disposable = new CompositeDisposable();
+        }
     }
 
     public V getView() {
         return view;
+    }
+
+    public CompositeDisposable getDisposable() {
+        return disposable;
     }
 
     @Override
@@ -30,5 +41,11 @@ public abstract class BasePresenterImp<V extends BaseView> implements BasePresen
         }
 
         return ((Context) view).getString(id, args);
+    }
+
+    @Override
+    public void detachView() {
+        disposable.dispose();
+        view = null;
     }
 }

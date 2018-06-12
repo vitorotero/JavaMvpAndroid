@@ -9,7 +9,7 @@ public interface LoginContract {
 
     interface Presenter extends BasePresenter {
 
-        void teste();
+        void doSignIn(String mail, String password);
     }
 
 }
