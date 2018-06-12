@@ -1,6 +1,8 @@
 
 # Created by https://www.gitignore.io/api/git,java,android,intellij
 
+.DS_Store
+
 ### Android ###
 # Built application files
 *.apk
@@ -38,6 +40,7 @@ captures/
 
 # Intellij
 *.iml
+.idea
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/gradle.xml
