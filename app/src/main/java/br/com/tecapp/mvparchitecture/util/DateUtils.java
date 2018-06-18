@@ -1,4 +1,4 @@
-package com.example.vitormachado.mvparchitecture.util;
+package br.com.tecapp.mvparchitecture.util;
 
 /**
  * @author vitor.machado on 12/06/18.

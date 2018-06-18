@@ -1,9 +1,9 @@
-package com.example.vitormachado.mvparchitecture.shared.dagger.shared;
+package br.com.tecapp.mvparchitecture.shared.dagger.shared;
 
-import com.example.vitormachado.mvparchitecture.shared.dagger.ui.LoginActivityModule;
-import com.example.vitormachado.mvparchitecture.shared.dagger.ui.SplashActivityModule;
-import com.example.vitormachado.mvparchitecture.ui.login.LoginActivity;
-import com.example.vitormachado.mvparchitecture.ui.splash.SplashActivity;
+import br.com.tecapp.mvparchitecture.shared.dagger.ui.LoginActivityModule;
+import br.com.tecapp.mvparchitecture.shared.dagger.ui.SplashActivityModule;
+import br.com.tecapp.mvparchitecture.ui.login.LoginActivity;
+import br.com.tecapp.mvparchitecture.ui.splash.SplashActivity;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;

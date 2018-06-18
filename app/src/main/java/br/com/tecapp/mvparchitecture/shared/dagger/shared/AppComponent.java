@@ -1,8 +1,8 @@
-package com.example.vitormachado.mvparchitecture.shared.dagger.shared;
+package br.com.tecapp.mvparchitecture.shared.dagger.shared;
 
 import android.app.Application;
 
-import com.example.vitormachado.mvparchitecture.ui.BaseApplication;
+import br.com.tecapp.mvparchitecture.ui.BaseApplication;
 
 import javax.inject.Singleton;
 

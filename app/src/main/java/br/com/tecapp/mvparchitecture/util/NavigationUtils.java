@@ -1,4 +1,4 @@
-package com.example.vitormachado.mvparchitecture.util;
+package br.com.tecapp.mvparchitecture.util;
 
 import android.content.Context;
 import android.content.Intent;

@@ -1,7 +1,7 @@
-package com.example.vitormachado.mvparchitecture.shared.repository;
+package br.com.tecapp.mvparchitecture.shared.repository;
 
-import com.example.vitormachado.mvparchitecture.shared.base.BaseRepository;
-import com.example.vitormachado.mvparchitecture.shared.model.User;
+import br.com.tecapp.mvparchitecture.shared.base.BaseRepository;
+import br.com.tecapp.mvparchitecture.shared.model.User;
 
 import io.reactivex.Single;
 

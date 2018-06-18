@@ -1,7 +1,7 @@
-package com.example.vitormachado.mvparchitecture.ui.login;
+package br.com.tecapp.mvparchitecture.ui.login;
 
-import com.example.vitormachado.mvparchitecture.shared.base.BasePresenter;
-import com.example.vitormachado.mvparchitecture.shared.base.BaseView;
+import br.com.tecapp.mvparchitecture.shared.base.BasePresenter;
+import br.com.tecapp.mvparchitecture.shared.base.BaseView;
 
 public interface LoginContract {
 

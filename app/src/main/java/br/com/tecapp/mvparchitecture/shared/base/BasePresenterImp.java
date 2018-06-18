@@ -1,11 +1,11 @@
-package com.example.vitormachado.mvparchitecture.shared.base;
+package br.com.tecapp.mvparchitecture.shared.base;
 
 import android.content.Context;
 
-import com.example.vitormachado.mvparchitecture.shared.exception.AppException;
-import com.example.vitormachado.mvparchitecture.shared.exception.ExceptionUtils;
-import com.example.vitormachado.mvparchitecture.shared.schedulers.BaseSchedulerProvider;
-import com.example.vitormachado.mvparchitecture.shared.schedulers.SchedulerProvider;
+import br.com.tecapp.mvparchitecture.shared.exception.AppException;
+import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
+import br.com.tecapp.mvparchitecture.shared.schedulers.BaseSchedulerProvider;
+import br.com.tecapp.mvparchitecture.shared.schedulers.SchedulerProvider;
 
 public abstract class BasePresenterImp<V extends BaseView> implements BasePresenter {
 

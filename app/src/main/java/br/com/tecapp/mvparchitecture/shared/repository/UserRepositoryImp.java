@@ -1,10 +1,10 @@
-package com.example.vitormachado.mvparchitecture.shared.repository;
+package br.com.tecapp.mvparchitecture.shared.repository;
 
-import com.example.vitormachado.mvparchitecture.R;
-import com.example.vitormachado.mvparchitecture.shared.base.BaseRepositoryImp;
-import com.example.vitormachado.mvparchitecture.shared.exception.ObjectBoxException;
-import com.example.vitormachado.mvparchitecture.shared.model.User;
-import com.example.vitormachado.mvparchitecture.shared.model.User_;
+import br.com.tecapp.mvparchitecture.R;
+import br.com.tecapp.mvparchitecture.shared.base.BaseRepositoryImp;
+import br.com.tecapp.mvparchitecture.shared.exception.ObjectBoxException;
+import br.com.tecapp.mvparchitecture.shared.model.User;
+import br.com.tecapp.mvparchitecture.shared.model.User_;
 
 import io.objectbox.BoxStore;
 import io.reactivex.Single;

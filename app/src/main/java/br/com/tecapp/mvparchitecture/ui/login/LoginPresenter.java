@@ -1,12 +1,12 @@
-package com.example.vitormachado.mvparchitecture.ui.login;
+package br.com.tecapp.mvparchitecture.ui.login;
 
 import android.util.Log;
 
-import com.example.vitormachado.mvparchitecture.shared.base.BasePresenterImp;
-import com.example.vitormachado.mvparchitecture.shared.exception.ExceptionUtils;
-import com.example.vitormachado.mvparchitecture.shared.manager.UserManager;
-import com.example.vitormachado.mvparchitecture.shared.model.User;
-import com.example.vitormachado.mvparchitecture.util.StringUtil;
+import br.com.tecapp.mvparchitecture.shared.base.BasePresenterImp;
+import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
+import br.com.tecapp.mvparchitecture.shared.manager.UserManager;
+import br.com.tecapp.mvparchitecture.shared.model.User;
+import br.com.tecapp.mvparchitecture.util.StringUtil;
 
 public class LoginPresenter extends BasePresenterImp<LoginContract.View>
         implements LoginContract.Presenter {

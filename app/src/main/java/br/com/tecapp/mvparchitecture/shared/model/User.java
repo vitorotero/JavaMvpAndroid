@@ -1,4 +1,4 @@
-package com.example.vitormachado.mvparchitecture.shared.model;
+package br.com.tecapp.mvparchitecture.shared.model;
 
 import com.google.gson.annotations.SerializedName;
 

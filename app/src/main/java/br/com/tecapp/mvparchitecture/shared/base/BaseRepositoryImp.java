@@ -1,4 +1,4 @@
-package com.example.vitormachado.mvparchitecture.shared.base;
+package br.com.tecapp.mvparchitecture.shared.base;
 
 
 import io.objectbox.BoxStore;

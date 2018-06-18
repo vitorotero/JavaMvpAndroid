@@ -1,12 +1,12 @@
-package com.example.vitormachado.mvparchitecture.shared.dagger.shared;
+package br.com.tecapp.mvparchitecture.shared.dagger.shared;
 
 import android.app.Application;
 import android.content.Context;
 
-import com.example.vitormachado.mvparchitecture.R;
-import com.example.vitormachado.mvparchitecture.shared.exception.ExceptionUtils;
-import com.example.vitormachado.mvparchitecture.shared.exception.ExceptionUtilsImp;
-import com.example.vitormachado.mvparchitecture.shared.model.MyObjectBox;
+import br.com.tecapp.mvparchitecture.R;
+import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
+import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtilsImp;
+import br.com.tecapp.mvparchitecture.shared.model.MyObjectBox;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -17,7 +17,7 @@ import io.objectbox.BoxStore;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static com.example.vitormachado.mvparchitecture.util.DateUtils.DATE_TIME_SERVER;
+import static br.com.tecapp.mvparchitecture.util.DateUtils.DATE_TIME_SERVER;
 
 /**
  * @author vitor.machado on 12/06/18.

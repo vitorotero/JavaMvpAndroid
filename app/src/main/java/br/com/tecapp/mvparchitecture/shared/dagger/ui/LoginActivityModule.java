@@ -1,10 +1,10 @@
-package com.example.vitormachado.mvparchitecture.shared.dagger.ui;
+package br.com.tecapp.mvparchitecture.shared.dagger.ui;
 
-import com.example.vitormachado.mvparchitecture.shared.exception.ExceptionUtils;
-import com.example.vitormachado.mvparchitecture.shared.manager.UserManager;
-import com.example.vitormachado.mvparchitecture.ui.login.LoginActivity;
-import com.example.vitormachado.mvparchitecture.ui.login.LoginContract;
-import com.example.vitormachado.mvparchitecture.ui.login.LoginPresenter;
+import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
+import br.com.tecapp.mvparchitecture.shared.manager.UserManager;
+import br.com.tecapp.mvparchitecture.ui.login.LoginActivity;
+import br.com.tecapp.mvparchitecture.ui.login.LoginContract;
+import br.com.tecapp.mvparchitecture.ui.login.LoginPresenter;
 
 import dagger.Module;
 import dagger.Provides;

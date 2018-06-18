@@ -1,9 +1,9 @@
-package com.example.vitormachado.mvparchitecture.shared.dagger.shared;
+package br.com.tecapp.mvparchitecture.shared.dagger.shared;
 
-import com.example.vitormachado.mvparchitecture.shared.manager.UserManager;
-import com.example.vitormachado.mvparchitecture.shared.manager.UserManagerImp;
-import com.example.vitormachado.mvparchitecture.shared.repository.UserRepository;
-import com.example.vitormachado.mvparchitecture.shared.service.UserService;
+import br.com.tecapp.mvparchitecture.shared.manager.UserManager;
+import br.com.tecapp.mvparchitecture.shared.manager.UserManagerImp;
+import br.com.tecapp.mvparchitecture.shared.repository.UserRepository;
+import br.com.tecapp.mvparchitecture.shared.service.UserService;
 
 import dagger.Module;
 import dagger.Provides;

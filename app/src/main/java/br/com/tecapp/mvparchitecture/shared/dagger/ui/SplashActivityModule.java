@@ -1,4 +1,4 @@
-package com.example.vitormachado.mvparchitecture.shared.dagger.ui;
+package br.com.tecapp.mvparchitecture.shared.dagger.ui;
 
 import dagger.Module;
 

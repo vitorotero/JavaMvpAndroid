@@ -1,4 +1,4 @@
-package com.example.vitormachado.mvparchitecture.shared.exception;
+package br.com.tecapp.mvparchitecture.shared.exception;
 
 import com.google.gson.annotations.SerializedName;
 

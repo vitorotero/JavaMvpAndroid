@@ -1,6 +1,6 @@
-package com.example.vitormachado.mvparchitecture.shared.dagger.shared;
+package br.com.tecapp.mvparchitecture.shared.dagger.shared;
 
-import com.example.vitormachado.mvparchitecture.shared.service.UserService;
+import br.com.tecapp.mvparchitecture.shared.service.UserService;
 
 import dagger.Module;
 import dagger.Provides;

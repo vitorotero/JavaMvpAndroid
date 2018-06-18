@@ -1,6 +1,6 @@
-package com.example.vitormachado.mvparchitecture.shared.base;
+package br.com.tecapp.mvparchitecture.shared.base;
 
-import com.example.vitormachado.mvparchitecture.shared.exception.ExceptionUtils;
+import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
 
 public interface BasePresenter {
 

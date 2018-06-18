@@ -1,12 +1,12 @@
-package com.example.vitormachado.mvparchitecture.ui.login;
+package br.com.tecapp.mvparchitecture.ui.login;
 
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.widget.AppCompatButton;
 
-import com.example.vitormachado.mvparchitecture.R;
-import com.example.vitormachado.mvparchitecture.shared.base.BaseActivity;
+import br.com.tecapp.mvparchitecture.R;
+import br.com.tecapp.mvparchitecture.shared.base.BaseActivity;
 import com.jakewharton.rxbinding2.view.RxView;
 
 import java.util.concurrent.TimeUnit;

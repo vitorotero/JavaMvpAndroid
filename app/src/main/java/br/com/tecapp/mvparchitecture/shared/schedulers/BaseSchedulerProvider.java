@@ -1,4 +1,4 @@
-package com.example.vitormachado.mvparchitecture.shared.schedulers;
+package br.com.tecapp.mvparchitecture.shared.schedulers;
 
 import android.support.annotation.NonNull;
 

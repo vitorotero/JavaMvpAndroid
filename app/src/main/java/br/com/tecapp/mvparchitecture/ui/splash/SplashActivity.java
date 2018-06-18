@@ -1,11 +1,11 @@
-package com.example.vitormachado.mvparchitecture.ui.splash;
+package br.com.tecapp.mvparchitecture.ui.splash;
 
 import android.os.CountDownTimer;
 
-import com.example.vitormachado.mvparchitecture.R;
-import com.example.vitormachado.mvparchitecture.shared.base.BaseActivity;
-import com.example.vitormachado.mvparchitecture.ui.login.LoginActivity;
-import com.example.vitormachado.mvparchitecture.util.NavigationUtils;
+import br.com.tecapp.mvparchitecture.R;
+import br.com.tecapp.mvparchitecture.shared.base.BaseActivity;
+import br.com.tecapp.mvparchitecture.ui.login.LoginActivity;
+import br.com.tecapp.mvparchitecture.util.NavigationUtils;
 
 /**
  * @author vitor.machado on 08/06/18.

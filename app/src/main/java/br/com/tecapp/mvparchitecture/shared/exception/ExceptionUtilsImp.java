@@ -1,10 +1,10 @@
-package com.example.vitormachado.mvparchitecture.shared.exception;
+package br.com.tecapp.mvparchitecture.shared.exception;
 
 import android.content.Context;
 import android.support.annotation.StringRes;
 import android.util.Log;
 
-import com.example.vitormachado.mvparchitecture.R;
+import br.com.tecapp.mvparchitecture.R;
 import com.google.gson.JsonSyntaxException;
 
 import java.io.IOException;

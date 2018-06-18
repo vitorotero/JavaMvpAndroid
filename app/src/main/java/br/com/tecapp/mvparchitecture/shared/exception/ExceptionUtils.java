@@ -1,4 +1,4 @@
-package com.example.vitormachado.mvparchitecture.shared.exception;
+package br.com.tecapp.mvparchitecture.shared.exception;
 
 public interface ExceptionUtils {
 

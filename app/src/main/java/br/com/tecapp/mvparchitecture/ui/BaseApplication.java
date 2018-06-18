@@ -1,6 +1,6 @@
-package com.example.vitormachado.mvparchitecture.ui;
+package br.com.tecapp.mvparchitecture.ui;
 
-import com.example.vitormachado.mvparchitecture.shared.dagger.shared.DaggerAppComponent;
+import br.com.tecapp.mvparchitecture.shared.dagger.shared.DaggerAppComponent;
 
 import dagger.android.AndroidInjector;
 import dagger.android.DaggerApplication;
