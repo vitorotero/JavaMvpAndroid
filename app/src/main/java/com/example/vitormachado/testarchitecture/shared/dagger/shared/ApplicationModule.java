@@ -5,8 +5,8 @@ import android.content.Context;
 
 import com.example.vitormachado.testarchitecture.R;
 import com.example.vitormachado.testarchitecture.shared.exception.ExceptionUtils;
-import com.example.vitormachado.testarchitecture.shared.model.MyObjectBox;
 import com.example.vitormachado.testarchitecture.shared.exception.ExceptionUtilsImp;
+import com.example.vitormachado.testarchitecture.shared.model.MyObjectBox;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

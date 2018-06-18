@@ -3,14 +3,10 @@ package com.example.vitormachado.testarchitecture.ui.login;
 import android.util.Log;
 
 import com.example.vitormachado.testarchitecture.shared.base.BasePresenterImp;
-import com.example.vitormachado.testarchitecture.shared.exception.AppException;
 import com.example.vitormachado.testarchitecture.shared.exception.ExceptionUtils;
 import com.example.vitormachado.testarchitecture.shared.manager.UserManager;
 import com.example.vitormachado.testarchitecture.shared.model.User;
 import com.example.vitormachado.testarchitecture.util.StringUtil;
-
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
 
 public class LoginPresenter extends BasePresenterImp<LoginContract.View>
         implements LoginContract.Presenter {
@@ -44,8 +40,8 @@ public class LoginPresenter extends BasePresenterImp<LoginContract.View>
         }
 
         getView().addDisposable(userManager.doSignIn(mail, password)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(scheduler.io())
+                .observeOn(scheduler.ui())
                 .subscribe(this::doSignInSuccess, this::simpleError)
         );
     }
