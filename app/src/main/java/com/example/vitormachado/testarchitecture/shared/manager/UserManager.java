@@ -12,4 +12,5 @@ public interface UserManager extends BaseManager {
 
     Single<User> doSignIn(String user, String password);
 
+    Single<User> getUserLogged();
 }

@@ -1,9 +1,8 @@
-package com.example.vitormachado.testarchitecture.shared.Service;
+package com.example.vitormachado.testarchitecture.shared.service;
 
 import com.example.vitormachado.testarchitecture.shared.model.User;
 
 import io.reactivex.Single;
-import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 

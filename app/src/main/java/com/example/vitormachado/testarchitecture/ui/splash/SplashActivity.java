@@ -28,7 +28,8 @@ public class SplashActivity extends BaseActivity {
             @Override
             public void onFinish() {
                 NavigationUtils.openActivity(SplashActivity.this,
-                        LoginActivity.getIntent(SplashActivity.this));
+                        LoginActivity.getIntent(SplashActivity.this)
+                );
             }
         }.start();
     }

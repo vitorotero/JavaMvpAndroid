@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">TestArchitecture</string>
+
+    <!-- Exception ObjectBox Messages -->
+    <string name="generic_error_message">Ocorreu um erro, por favor tente novamente.</string>
+    <string name="generic_service_error_message">Ocorreu um erro no servidor, por favor tente novamente.</string>
+    <string name="generic_error_no_network">Ocorreu um erro no servidor, por favor tente novamente.</string>
+    <string name="user_not_found">Usuário e/ou senha inválidos ou não existe.</string>
+    <!-- Exception ObjectBox Messages -->
+
+    <!-- Login Activity -->
     <string name="login_et_mail_hint">E-mail</string>
     <string name="login_et_password_hint">Senha</string>
     <string name="login_btn_sign_in_text">Entrar</string>
+    <!-- Login Activity -->
+
+
 </resources>

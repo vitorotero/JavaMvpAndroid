@@ -1,6 +1,6 @@
 package com.example.vitormachado.testarchitecture.shared.dagger.shared;
 
-import com.example.vitormachado.testarchitecture.shared.Service.UserService;
+import com.example.vitormachado.testarchitecture.shared.service.UserService;
 
 import dagger.Module;
 import dagger.Provides;
