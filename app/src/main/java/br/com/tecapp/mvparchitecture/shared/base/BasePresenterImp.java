@@ -4,19 +4,20 @@ import android.content.Context;
 
 import br.com.tecapp.mvparchitecture.shared.exception.AppException;
 import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
-import br.com.tecapp.mvparchitecture.shared.schedulers.BaseSchedulerProvider;
+import br.com.tecapp.mvparchitecture.shared.model.GenericButtonModal;
 import br.com.tecapp.mvparchitecture.shared.schedulers.SchedulerProvider;
+import br.com.tecapp.mvparchitecture.shared.schedulers.SchedulerProviderImp;
 
 public abstract class BasePresenterImp<V extends BaseView> implements BasePresenter {
 
-    protected BaseSchedulerProvider scheduler;
+    protected SchedulerProvider scheduler;
     private ExceptionUtils exceptionUtils;
     private V view;
 
     public BasePresenterImp(V view, ExceptionUtils exceptionUtils) {
         this.view = view;
         this.exceptionUtils = exceptionUtils;
-        scheduler = SchedulerProvider.getInstance();
+        scheduler = new SchedulerProviderImp();
     }
 
     public V getView() {
@@ -53,7 +54,9 @@ public abstract class BasePresenterImp<V extends BaseView> implements BasePresen
 
     @Override
     public void simpleError(Throwable throwable) {
-        //TODO: continuar a implementação quando criar os alertas genericos
         AppException appException = exceptionUtils.getMessageFromThrowable(throwable);
+        getView().showGenericOneButton(new GenericButtonModal(android.R.drawable.ic_dialog_alert,
+                appException.getMessage())
+        );
     }
 }

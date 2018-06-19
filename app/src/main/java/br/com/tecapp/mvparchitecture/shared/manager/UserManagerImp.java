@@ -3,7 +3,6 @@ package br.com.tecapp.mvparchitecture.shared.manager;
 import br.com.tecapp.mvparchitecture.shared.model.User;
 import br.com.tecapp.mvparchitecture.shared.repository.UserRepository;
 import br.com.tecapp.mvparchitecture.shared.service.UserService;
-
 import io.reactivex.Single;
 
 /**
@@ -44,9 +43,6 @@ public class UserManagerImp implements UserManager {
         user.setMail(mail);
         user.setPassword(password);
         user.setLogged(true);
-
-        saveUser(user);
-
         return Single.just(user);
     }
 }

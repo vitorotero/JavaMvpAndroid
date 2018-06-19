@@ -4,27 +4,25 @@ import br.com.tecapp.mvparchitecture.R;
 import br.com.tecapp.mvparchitecture.shared.base.BaseRepositoryImp;
 import br.com.tecapp.mvparchitecture.shared.exception.ObjectBoxException;
 import br.com.tecapp.mvparchitecture.shared.model.User;
-import br.com.tecapp.mvparchitecture.shared.model.User_;
-
-import io.objectbox.BoxStore;
 import io.reactivex.Single;
+import io.realm.Realm;
 
-public class UserRepositoryImp extends BaseRepositoryImp<BoxStore> implements UserRepository {
+import static br.com.tecapp.mvparchitecture.shared.model.User.PROPERTY_LOGGED;
 
-    public UserRepositoryImp(BoxStore boxStore) {
-        super(boxStore);
+public class UserRepositoryImp extends BaseRepositoryImp<Realm> implements UserRepository {
+
+    public UserRepositoryImp(Realm realm) {
+        super(realm);
     }
 
     @Override
     public Single<User> getUserLogged() {
-        User userLogged = getBoxStore().boxFor(User.class)
-                .query()
-                .equal(User_.isLogged, true)
-                .build()
+        User userLogged = getRealm().where(User.class)
+                .equalTo(PROPERTY_LOGGED, true)
                 .findFirst();
 
         if (userLogged != null) {
-            return Single.just(userLogged);
+            return Single.just(getRealm().copyFromRealm(userLogged));
         }
 
         return Single.error(new ObjectBoxException(R.string.user_not_found));
@@ -32,6 +30,6 @@ public class UserRepositoryImp extends BaseRepositoryImp<BoxStore> implements Us
 
     @Override
     public void saveUser(User user) {
-        getBoxStore().boxFor(User.class).put(user);
+        getRealm().executeTransaction(realm -> realm.copyToRealmOrUpdate(user));
     }
 }

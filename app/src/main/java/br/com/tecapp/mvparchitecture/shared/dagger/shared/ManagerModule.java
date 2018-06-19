@@ -4,7 +4,6 @@ import br.com.tecapp.mvparchitecture.shared.manager.UserManager;
 import br.com.tecapp.mvparchitecture.shared.manager.UserManagerImp;
 import br.com.tecapp.mvparchitecture.shared.repository.UserRepository;
 import br.com.tecapp.mvparchitecture.shared.service.UserService;
-
 import dagger.Module;
 import dagger.Provides;
 

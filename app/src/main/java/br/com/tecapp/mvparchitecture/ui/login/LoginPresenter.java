@@ -2,9 +2,11 @@ package br.com.tecapp.mvparchitecture.ui.login;
 
 import android.util.Log;
 
+import br.com.tecapp.mvparchitecture.R;
 import br.com.tecapp.mvparchitecture.shared.base.BasePresenterImp;
 import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
 import br.com.tecapp.mvparchitecture.shared.manager.UserManager;
+import br.com.tecapp.mvparchitecture.shared.model.GenericButtonModal;
 import br.com.tecapp.mvparchitecture.shared.model.User;
 import br.com.tecapp.mvparchitecture.util.StringUtil;
 
@@ -30,12 +32,16 @@ public class LoginPresenter extends BasePresenterImp<LoginContract.View>
     @Override
     public void doSignIn(String mail, String password) {
         if (StringUtil.isMailNotValid(mail)) {
-            //TODO: Implementation generic modal native and show here
+            getView().showGenericOneButton(new GenericButtonModal(android.R.drawable.ic_dialog_alert,
+                    R.string.login_mail_invalid)
+            );
             return;
         }
 
-        if (StringUtil.isEmpty(password) && password.length() < 4) {
-            //TODO: Implementation generic modal native and show here
+        if (StringUtil.isEmpty(password)) {
+            getView().showGenericOneButton(new GenericButtonModal(android.R.drawable.ic_dialog_alert,
+                    R.string.login_password_invalid)
+            );
             return;
         }
 

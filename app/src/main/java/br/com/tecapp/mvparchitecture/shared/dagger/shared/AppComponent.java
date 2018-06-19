@@ -2,10 +2,9 @@ package br.com.tecapp.mvparchitecture.shared.dagger.shared;
 
 import android.app.Application;
 
-import br.com.tecapp.mvparchitecture.ui.BaseApplication;
-
 import javax.inject.Singleton;
 
+import br.com.tecapp.mvparchitecture.ui.BaseApplication;
 import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.AndroidInjector;

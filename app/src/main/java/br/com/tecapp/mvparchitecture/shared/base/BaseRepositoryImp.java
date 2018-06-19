@@ -1,23 +1,22 @@
 package br.com.tecapp.mvparchitecture.shared.base;
 
+import io.realm.Realm;
 
-import io.objectbox.BoxStore;
+public class BaseRepositoryImp<B extends Realm> implements BaseRepository {
 
-public class BaseRepositoryImp<B extends BoxStore> implements BaseRepository {
+    private B realm;
 
-    private B boxStore;
-
-    public BaseRepositoryImp(B boxStore) {
-        this.boxStore = boxStore;
+    public BaseRepositoryImp(B realm) {
+        this.realm = realm;
     }
 
     @Override
-    public BoxStore getBoxStore() {
-        return boxStore;
+    public Realm getRealm() {
+        return realm;
     }
 
     @Override
     public void detach() {
-        boxStore.close();
+        realm.close();
     }
 }

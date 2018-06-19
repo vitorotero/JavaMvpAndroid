@@ -3,17 +3,17 @@ package br.com.tecapp.mvparchitecture.shared.dagger.shared;
 import android.app.Application;
 import android.content.Context;
 
-import br.com.tecapp.mvparchitecture.R;
-import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
-import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtilsImp;
-import br.com.tecapp.mvparchitecture.shared.model.MyObjectBox;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import br.com.tecapp.mvparchitecture.R;
+import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
+import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtilsImp;
 import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
-import io.objectbox.BoxStore;
+import io.realm.Realm;
+import io.realm.RealmConfiguration;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -40,8 +40,13 @@ public abstract class ApplicationModule {
     }
 
     @Provides
-    static BoxStore provideObjectBox(Context context) {
-        return MyObjectBox.builder().androidContext(context).build();
+    static Realm provideRealm(Context context) {
+        RealmConfiguration config = new RealmConfiguration.Builder()
+                .schemaVersion(1)
+                .deleteRealmIfMigrationNeeded()
+                .build();
+
+        return Realm.getInstance(config);
     }
 
     @Provides

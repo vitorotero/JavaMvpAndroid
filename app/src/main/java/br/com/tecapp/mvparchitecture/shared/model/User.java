@@ -2,16 +2,17 @@ package br.com.tecapp.mvparchitecture.shared.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import io.objectbox.annotation.Entity;
-import io.objectbox.annotation.Id;
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 /**
  * @author vitor.machado on 12/06/18.
  */
-@Entity
-public class User {
+public class User extends RealmObject {
 
-    @Id(assignable = true)
+    public static final String PROPERTY_LOGGED = "isLogged";
+
+    @PrimaryKey
     @SerializedName("id")
     private long id;
     @SerializedName("email") private String mail;

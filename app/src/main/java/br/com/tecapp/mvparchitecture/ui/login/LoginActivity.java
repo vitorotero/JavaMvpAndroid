@@ -5,14 +5,14 @@ import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.widget.AppCompatButton;
 
-import br.com.tecapp.mvparchitecture.R;
-import br.com.tecapp.mvparchitecture.shared.base.BaseActivity;
 import com.jakewharton.rxbinding2.view.RxView;
 
 import java.util.concurrent.TimeUnit;
 
 import javax.inject.Inject;
 
+import br.com.tecapp.mvparchitecture.R;
+import br.com.tecapp.mvparchitecture.shared.base.BaseActivity;
 import butterknife.BindView;
 
 public class LoginActivity extends BaseActivity implements LoginContract.View {

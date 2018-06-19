@@ -5,7 +5,6 @@ import br.com.tecapp.mvparchitecture.shared.manager.UserManager;
 import br.com.tecapp.mvparchitecture.ui.login.LoginActivity;
 import br.com.tecapp.mvparchitecture.ui.login.LoginContract;
 import br.com.tecapp.mvparchitecture.ui.login.LoginPresenter;
-
 import dagger.Module;
 import dagger.Provides;
 

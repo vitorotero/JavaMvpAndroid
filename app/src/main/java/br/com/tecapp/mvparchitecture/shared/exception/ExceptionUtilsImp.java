@@ -4,12 +4,12 @@ import android.content.Context;
 import android.support.annotation.StringRes;
 import android.util.Log;
 
-import br.com.tecapp.mvparchitecture.R;
 import com.google.gson.JsonSyntaxException;
 
 import java.io.IOException;
 import java.lang.annotation.Annotation;
 
+import br.com.tecapp.mvparchitecture.R;
 import okhttp3.ResponseBody;
 import retrofit2.Converter;
 import retrofit2.HttpException;

@@ -1,11 +1,10 @@
 package br.com.tecapp.mvparchitecture.shared.base;
 
-
-import io.objectbox.BoxStore;
+import io.realm.Realm;
 
 public interface BaseRepository {
 
-    BoxStore getBoxStore();
+    Realm getRealm();
 
     void detach();
 }

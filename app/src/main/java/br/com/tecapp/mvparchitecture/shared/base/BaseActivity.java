@@ -5,6 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import br.com.tecapp.mvparchitecture.shared.model.GenericButtonModal;
+import br.com.tecapp.mvparchitecture.ui.dialog.buttons.GenericModal;
+import br.com.tecapp.mvparchitecture.ui.dialog.buttons.GenericOneButton;
+import br.com.tecapp.mvparchitecture.ui.dialog.buttons.GenericTwoButton;
 import butterknife.ButterKnife;
 import dagger.android.DaggerActivity;
 import io.reactivex.disposables.CompositeDisposable;
@@ -53,4 +57,15 @@ public abstract class BaseActivity extends DaggerActivity implements BaseView {
         disposables.add(disposable);
     }
 
+    @Override
+    public void showGenericOneButton(GenericButtonModal buttonModal) {
+        GenericModal modal = GenericOneButton.newInstance(buttonModal);
+        modal.show(getFragmentManager(), GenericOneButton.class.getSimpleName());
+    }
+
+    @Override
+    public void showGenericTwoButton(GenericButtonModal buttonModal) {
+        GenericModal modal = GenericTwoButton.newInstance(buttonModal);
+        modal.show(getFragmentManager(), GenericTwoButton.class.getSimpleName());
+    }
 }

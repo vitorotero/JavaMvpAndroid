@@ -2,7 +2,6 @@ package br.com.tecapp.mvparchitecture.shared.manager;
 
 import br.com.tecapp.mvparchitecture.shared.base.BaseManager;
 import br.com.tecapp.mvparchitecture.shared.model.User;
-
 import io.reactivex.Single;
 
 /**

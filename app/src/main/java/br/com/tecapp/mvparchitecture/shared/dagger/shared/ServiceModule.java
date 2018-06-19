@@ -1,7 +1,6 @@
 package br.com.tecapp.mvparchitecture.shared.dagger.shared;
 
 import br.com.tecapp.mvparchitecture.shared.service.UserService;
-
 import dagger.Module;
 import dagger.Provides;
 import retrofit2.Retrofit;

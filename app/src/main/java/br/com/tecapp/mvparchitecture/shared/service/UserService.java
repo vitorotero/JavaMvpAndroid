@@ -1,7 +1,6 @@
 package br.com.tecapp.mvparchitecture.shared.service;
 
 import br.com.tecapp.mvparchitecture.shared.model.User;
-
 import io.reactivex.Single;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
