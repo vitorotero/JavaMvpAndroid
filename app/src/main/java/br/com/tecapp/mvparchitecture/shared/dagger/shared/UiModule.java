@@ -1,5 +1,6 @@
 package br.com.tecapp.mvparchitecture.shared.dagger.shared;
 
+import br.com.tecapp.mvparchitecture.shared.dagger.ui.HomeActivityModule;
 import br.com.tecapp.mvparchitecture.shared.dagger.ui.LoginActivityModule;
 import br.com.tecapp.mvparchitecture.shared.dagger.ui.SplashActivityModule;
 import br.com.tecapp.mvparchitecture.shared.dagger.ui.dialogs.GenericModalModule;
@@ -8,6 +9,7 @@ import br.com.tecapp.mvparchitecture.shared.dagger.ui.dialogs.GenericTwoButtonMo
 import br.com.tecapp.mvparchitecture.ui.dialog.buttons.GenericModal;
 import br.com.tecapp.mvparchitecture.ui.dialog.buttons.GenericOneButton;
 import br.com.tecapp.mvparchitecture.ui.dialog.buttons.GenericTwoButton;
+import br.com.tecapp.mvparchitecture.ui.home.HomeActivity;
 import br.com.tecapp.mvparchitecture.ui.login.LoginActivity;
 import br.com.tecapp.mvparchitecture.ui.splash.SplashActivity;
 import dagger.Module;
@@ -30,9 +32,12 @@ public abstract class UiModule {
     abstract GenericTwoButton genericTwoButtonModule();
 
     @ContributesAndroidInjector(modules = SplashActivityModule.class)
-    abstract SplashActivity SplashActivityModule();
+    abstract SplashActivity splashActivityModule();
 
     @ContributesAndroidInjector(modules = LoginActivityModule.class)
     abstract LoginActivity loginActivityModule();
+
+    @ContributesAndroidInjector(modules = HomeActivityModule.class)
+    abstract HomeActivity homeActivityModule();
 
 }

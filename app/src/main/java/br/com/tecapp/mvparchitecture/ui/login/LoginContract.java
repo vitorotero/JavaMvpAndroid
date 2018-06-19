@@ -5,7 +5,9 @@ import br.com.tecapp.mvparchitecture.shared.base.BaseView;
 
 public interface LoginContract {
 
-    interface View extends BaseView {}
+    interface View extends BaseView {
+        void openHome();
+    }
 
     interface Presenter extends BasePresenter {
 

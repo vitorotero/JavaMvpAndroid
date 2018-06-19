@@ -11,10 +11,11 @@ import br.com.tecapp.mvparchitecture.ui.dialog.buttons.GenericOneButton;
 import br.com.tecapp.mvparchitecture.ui.dialog.buttons.GenericTwoButton;
 import butterknife.ButterKnife;
 import dagger.android.DaggerActivity;
+import dagger.android.support.DaggerAppCompatActivity;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
-public abstract class BaseActivity extends DaggerActivity implements BaseView {
+public abstract class BaseActivity extends DaggerAppCompatActivity implements BaseView {
 
     private CompositeDisposable disposables;
 

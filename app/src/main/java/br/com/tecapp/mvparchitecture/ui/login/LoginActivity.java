@@ -13,6 +13,9 @@ import javax.inject.Inject;
 
 import br.com.tecapp.mvparchitecture.R;
 import br.com.tecapp.mvparchitecture.shared.base.BaseActivity;
+import br.com.tecapp.mvparchitecture.ui.home.HomeActivity;
+import br.com.tecapp.mvparchitecture.ui.splash.SplashActivity;
+import br.com.tecapp.mvparchitecture.util.NavigationUtils;
 import butterknife.BindView;
 
 public class LoginActivity extends BaseActivity implements LoginContract.View {
@@ -55,6 +58,13 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
                 .subscribe(aVoid -> presenter.doSignIn(etEmail.getText().toString(),
                         etPassword.getText().toString())
                 )
+        );
+    }
+
+    @Override
+    public void openHome() {
+        NavigationUtils.openActivity(LoginActivity.this,
+                HomeActivity.getIntent(LoginActivity.this)
         );
     }
 }

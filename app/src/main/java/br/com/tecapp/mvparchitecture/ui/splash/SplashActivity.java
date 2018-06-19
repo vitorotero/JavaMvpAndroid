@@ -30,6 +30,7 @@ public class SplashActivity extends BaseActivity {
                 NavigationUtils.openActivity(SplashActivity.this,
                         LoginActivity.getIntent(SplashActivity.this)
                 );
+                finish();
             }
         }.start();
     }

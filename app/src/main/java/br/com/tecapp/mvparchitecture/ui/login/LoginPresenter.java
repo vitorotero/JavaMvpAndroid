@@ -1,7 +1,5 @@
 package br.com.tecapp.mvparchitecture.ui.login;
 
-import android.util.Log;
-
 import br.com.tecapp.mvparchitecture.R;
 import br.com.tecapp.mvparchitecture.shared.base.BasePresenterImp;
 import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
@@ -53,6 +51,6 @@ public class LoginPresenter extends BasePresenterImp<LoginContract.View>
     }
 
     private void doSignInSuccess(User user) {
-        Log.d(TAG, "doSignInSuccess: " + user.getMail());
+        getView().openHome();
     }
 }

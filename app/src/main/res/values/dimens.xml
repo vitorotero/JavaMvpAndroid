@@ -27,6 +27,7 @@
 
     <!-- Login Activity -->
     <dimen name="login_iv_logo_size">100dp</dimen>
+    <dimen name="navigation_view_header_height">160dp</dimen>
     <!-- Login Activity -->
 
 </resources>
