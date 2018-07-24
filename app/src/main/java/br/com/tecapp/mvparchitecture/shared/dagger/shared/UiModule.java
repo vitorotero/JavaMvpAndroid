@@ -16,9 +16,8 @@ import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
 
 /**
- * @author vitor.machado on 12/06/18.
+ * @author Vitor Otero on 12/06/18.
  */
-
 @Module
 public abstract class UiModule {
 

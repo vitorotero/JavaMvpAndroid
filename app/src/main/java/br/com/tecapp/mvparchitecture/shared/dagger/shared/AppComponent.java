@@ -11,9 +11,8 @@ import dagger.android.AndroidInjector;
 import dagger.android.support.AndroidSupportInjectionModule;
 
 /**
- * @author vitor.machado on 12/06/18.
+ * @author Vitor Otero on 12/06/18.
  */
-
 @Singleton
 @Component(modules = {
         ApplicationModule.class,

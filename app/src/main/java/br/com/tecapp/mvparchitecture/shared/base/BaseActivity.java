@@ -15,6 +15,9 @@ import dagger.android.support.DaggerAppCompatActivity;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public abstract class BaseActivity extends DaggerAppCompatActivity implements BaseView {
 
     private CompositeDisposable disposables;

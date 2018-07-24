@@ -6,7 +6,7 @@ import br.com.tecapp.mvparchitecture.shared.service.UserService;
 import io.reactivex.Single;
 
 /**
- * @author vitor.machado on 12/06/18.
+ * @author Vitor Otero on 12/06/18.
  */
 public class UserManagerImp implements UserManager {
 

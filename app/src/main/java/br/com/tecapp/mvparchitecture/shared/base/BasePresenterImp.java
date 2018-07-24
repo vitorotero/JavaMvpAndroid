@@ -7,10 +7,16 @@ import br.com.tecapp.mvparchitecture.shared.exception.ExceptionUtils;
 import br.com.tecapp.mvparchitecture.shared.model.GenericButtonModal;
 import br.com.tecapp.mvparchitecture.shared.schedulers.SchedulerProvider;
 import br.com.tecapp.mvparchitecture.shared.schedulers.SchedulerProviderImp;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.disposables.Disposable;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public abstract class BasePresenterImp<V extends BaseView> implements BasePresenter {
 
     protected SchedulerProvider scheduler;
+    private CompositeDisposable disposables;
     private ExceptionUtils exceptionUtils;
     private V view;
 
@@ -18,6 +24,10 @@ public abstract class BasePresenterImp<V extends BaseView> implements BasePresen
         this.view = view;
         this.exceptionUtils = exceptionUtils;
         scheduler = new SchedulerProviderImp();
+
+        if (disposables == null || disposables.isDisposed()) {
+            disposables = new CompositeDisposable();
+        }
     }
 
     public V getView() {
@@ -45,11 +55,20 @@ public abstract class BasePresenterImp<V extends BaseView> implements BasePresen
     @Override
     public void detachView() {
         view = null;
+        if (disposables != null) {
+            disposables.clear();
+            disposables.dispose();
+        }
     }
 
     @Override
     public ExceptionUtils getExceptionUtils() {
         return exceptionUtils;
+    }
+
+    @Override
+    public void addDisposable(Disposable disposable) {
+        disposables.add(disposable);
     }
 
     @Override

@@ -16,6 +16,9 @@ import retrofit2.HttpException;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public class ExceptionUtilsImp implements ExceptionUtils {
 
     private static final long DEFAULT_CODE = -1;

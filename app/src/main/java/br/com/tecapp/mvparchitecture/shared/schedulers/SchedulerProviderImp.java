@@ -5,7 +5,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Provides different types of schedulers.
+ * @author Vitor Otero on 12/06/18.
  */
 public class SchedulerProviderImp implements SchedulerProvider {
 

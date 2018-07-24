@@ -14,6 +14,9 @@ import br.com.tecapp.mvparchitecture.util.DeviceUtils;
 import butterknife.ButterKnife;
 import dagger.android.DaggerDialogFragment;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public abstract class BaseDialog extends DaggerDialogFragment {
 
     private static final float NORMAL_DENSITY = 0.75f;

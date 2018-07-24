@@ -8,7 +8,7 @@ import br.com.tecapp.mvparchitecture.ui.login.LoginActivity;
 import br.com.tecapp.mvparchitecture.util.NavigationUtils;
 
 /**
- * @author vitor.machado on 08/06/18.
+ * @author Vitor Otero on 12/06/18.
  */
 public class SplashActivity extends BaseActivity {
 
@@ -38,5 +38,15 @@ public class SplashActivity extends BaseActivity {
     @Override
     protected void destroy() {
 
+    }
+
+    @Override
+    public void showLoading() {
+        throw new UnsupportedOperationException("This method is not to be called.");
+    }
+
+    @Override
+    public void hideLoading() {
+        throw new UnsupportedOperationException("This method is not to be called.");
     }
 }

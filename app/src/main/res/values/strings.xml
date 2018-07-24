@@ -14,6 +14,11 @@
     <string name="alert_generic_btn_negative_text">Cancelar</string>
     <!-- Alert Modal Generic Buttons -->
 
+    <!--Component Empty List-->
+    <string name="cpt_empty_list_text">Não há itens a exibir...</string>
+    <string name="cpt_empty_list_button_text">Tentar Novamente</string>
+    <!--Component Empty List-->
+
     <!--Navigation Drawer-->
     <string name="navigation_drawer_open_text">Abrir menu</string>
     <string name="navigation_drawer_close_text">Fechar menu</string>

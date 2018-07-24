@@ -18,6 +18,9 @@ import br.com.tecapp.mvparchitecture.ui.splash.SplashActivity;
 import br.com.tecapp.mvparchitecture.util.NavigationUtils;
 import butterknife.BindView;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public class LoginActivity extends BaseActivity implements LoginContract.View {
 
     @BindView(R.id.login_et_mail) TextInputEditText etEmail;
@@ -66,5 +69,15 @@ public class LoginActivity extends BaseActivity implements LoginContract.View {
         NavigationUtils.openActivity(LoginActivity.this,
                 HomeActivity.getIntent(LoginActivity.this)
         );
+    }
+
+    @Override
+    public void showLoading() {
+
+    }
+
+    @Override
+    public void hideLoading() {
+
     }
 }

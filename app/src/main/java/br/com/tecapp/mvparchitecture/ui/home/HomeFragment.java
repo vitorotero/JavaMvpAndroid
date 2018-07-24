@@ -12,6 +12,9 @@ import android.view.ViewGroup;
 import br.com.tecapp.mvparchitecture.R;
 import butterknife.ButterKnife;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public class HomeFragment extends Fragment {
 
     public static HomeFragment newInstance() {

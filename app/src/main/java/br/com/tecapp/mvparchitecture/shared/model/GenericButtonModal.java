@@ -5,6 +5,9 @@ import android.support.annotation.NonNull;
 import android.support.annotation.StringRes;
 import android.view.View;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public class GenericButtonModal {
 
     private int icon;

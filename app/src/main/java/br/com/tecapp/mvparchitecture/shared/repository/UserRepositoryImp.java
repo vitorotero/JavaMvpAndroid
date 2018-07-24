@@ -9,6 +9,9 @@ import io.realm.Realm;
 
 import static br.com.tecapp.mvparchitecture.shared.model.User.PROPERTY_LOGGED;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public class UserRepositoryImp extends BaseRepositoryImp<Realm> implements UserRepository {
 
     public UserRepositoryImp(Realm realm) {

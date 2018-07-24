@@ -5,6 +5,9 @@ import android.graphics.Point;
 import android.view.Display;
 import android.view.WindowManager;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public class DeviceUtils {
 
     public DeviceUtils() {

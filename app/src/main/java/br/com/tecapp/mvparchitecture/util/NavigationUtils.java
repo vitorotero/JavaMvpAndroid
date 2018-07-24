@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 /**
- * @author vitor.machado on 08/06/18.
+ * @author Vitor Otero on 12/06/18.
  */
 public class NavigationUtils {
 

@@ -9,7 +9,7 @@ import dagger.android.DaggerApplication;
 import io.realm.Realm;
 
 /**
- * @author vitor.machado on 11/06/18.
+ * @author Vitor Otero on 12/06/18.
  */
 public class BaseApplication extends DaggerApplication {
 

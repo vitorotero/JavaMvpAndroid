@@ -4,6 +4,9 @@ import android.view.View;
 
 import br.com.tecapp.mvparchitecture.shared.model.GenericButtonModal;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public class GenericTwoButton extends GenericModal {
 
     @Override

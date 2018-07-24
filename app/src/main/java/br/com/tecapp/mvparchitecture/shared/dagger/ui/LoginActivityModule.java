@@ -9,9 +9,8 @@ import dagger.Module;
 import dagger.Provides;
 
 /**
- * @author vitor.machado on 12/06/18.
+ * @author Vitor Otero on 12/06/18.
  */
-
 @Module
 public class LoginActivityModule {
 

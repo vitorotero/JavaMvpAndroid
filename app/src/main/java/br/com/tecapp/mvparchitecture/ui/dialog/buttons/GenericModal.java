@@ -10,6 +10,9 @@ import br.com.tecapp.mvparchitecture.shared.base.BaseDialog;
 import br.com.tecapp.mvparchitecture.shared.model.GenericButtonModal;
 import butterknife.BindView;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public abstract class GenericModal extends BaseDialog {
 
     @BindView(R.id.alert_generic_iv_icon) ImageView ivIcon;

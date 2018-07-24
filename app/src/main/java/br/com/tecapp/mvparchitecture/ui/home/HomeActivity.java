@@ -9,6 +9,9 @@ import br.com.tecapp.mvparchitecture.R;
 import br.com.tecapp.mvparchitecture.ui.basedrawer.DrawerNavigation;
 import br.com.tecapp.mvparchitecture.ui.login.LoginActivity;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public class HomeActivity extends DrawerNavigation {
 
     public static Intent getIntent(Context from) {
@@ -42,5 +45,15 @@ public class HomeActivity extends DrawerNavigation {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+    }
+
+    @Override
+    public void showLoading() {
+
+    }
+
+    @Override
+    public void hideLoading() {
+
     }
 }

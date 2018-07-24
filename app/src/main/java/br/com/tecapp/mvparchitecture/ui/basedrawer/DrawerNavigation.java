@@ -12,6 +12,9 @@ import br.com.tecapp.mvparchitecture.R;
 import br.com.tecapp.mvparchitecture.shared.base.BaseActivity;
 import butterknife.BindView;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public abstract class DrawerNavigation extends BaseActivity implements OnNavigationItemSelectedListener {
 
     @BindView(R.id.navigation_view) NavigationView navigationView;

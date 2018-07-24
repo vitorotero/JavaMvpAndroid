@@ -7,9 +7,8 @@ import dagger.Provides;
 import io.realm.Realm;
 
 /**
- * @author vitor.machado on 12/06/18.
+ * @author Vitor Otero on 12/06/18.
  */
-
 @Module
 public class RepositoryModule {
 

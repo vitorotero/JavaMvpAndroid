@@ -8,6 +8,9 @@ import br.com.tecapp.mvparchitecture.shared.model.GenericButtonModal;
 import br.com.tecapp.mvparchitecture.shared.model.User;
 import br.com.tecapp.mvparchitecture.util.StringUtil;
 
+/**
+ * @author Vitor Otero on 12/06/18.
+ */
 public class LoginPresenter extends BasePresenterImp<LoginContract.View>
         implements LoginContract.Presenter {
 

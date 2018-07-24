@@ -1,7 +1,7 @@
 package br.com.tecapp.mvparchitecture.util;
 
 /**
- * @author vitor.machado on 12/06/18.
+ * @author Vitor Otero on 12/06/18.
  */
 public class DateUtils {
 
